@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recipeak - Edit Recipe [Recipe Name Here]</title>
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Edit [Recipe]</h1>
+      <ul class="navmenu">
+        <li>Logo</li>
+        <li>[Name]</li>
+        <li>Log Out</li>
+        <li>Recipes</li>
+        <li>Options</li>
+        <li>About</li>
+      </ul>
+      <ul>
+        (The other nav menu)
+        <li>Logo</li>
+        <li>[Name]</li>
+        <li>Log Out</li>
+        <li>Recipes</li>
+        <li>Options</li>
+        <li>About</li>
+      </ul>
+      <ul class="userhomemenu">
+        <li><a href="./recipe/recipeadd.html">Add Recipe</a></li>
+        <li>
+          <label for="category">List by Category:</label>
+          <select name="category">
+            <option value="all">- Show All-</option>
+            <option value="none">Uncategorized</option>
+            <optgroup label="Meal">
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+              <option value="dessert">Dessert</option>
+              <option value="snack">Snack</option>
+            </optgroup>
+          </select>
+        </li>
+        <li>
+          <label for="rating">List by Rating:</label>
+          <input type="radio" id="unrated" name="rating" value="unrated" />
+          <label for="unrated">Unrated</label>
+          <input type="radio" id="1" name="rating" value="1" />
+          <label for="1">1</label>
+          <input type="radio" id="2" name="rating" value="2" />
+          <label for="2">2</label>
+          <input type="radio" id="3" name="rating" value="3" />
+          <label for="3">3</label>
+          <input type="radio" id="4" name="rating" value="4" />
+          <label for="4">4</label>
+          <input type="radio" id="5" name="rating" value="5" />
+          <label for="5">5</label>
+        </li>
+        <li>
+          Measurements:
+          <a href="metric">Metric</a>/<a href="us">US</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+            <form id="recipe-add">
+              <section class="basic-info">
+                  <h2>Basic Info</h2>
+                <label for="name">Name</label>
+                <input name="name" />
+                <label for="new-category">Category</label>
+                <select name="new-category">
+                  <option value="none">Uncategorized</option>
+                  <optgroup label="Meal">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="snack">Snack</option>
+                  </optgroup>
+                </select>
+                <label for="new-rating">Rating</label>
+                <input type="radio" id="unrated" name="new-rating" value="unrated" />
+                <label for="unrated">Unrated</label>
+                <input type="radio" id="1" name="new-rating" value="1" />
+                <label for="1">1</label>
+                <input type="radio" id="2" name="new-rating" value="2" />
+                <label for="2">2</label>
+                <input type="radio" id="3" name="new-rating" value="3" />
+                <label for="3">3</label>
+                <input type="radio" id="4" name="new-rating" value="4" />
+                <label for="4">4</label>
+                <input type="radio" id="5" name="new-rating" value="5" />
+                <label for="5">5</label>
+              </section>
+              <section class="ingredients">
+                <h2>Ingredients</h2>
+                <h3>Entered Ingredients</h3>
+                <ul class="entered-ingredients">
+                    <li>
+                        [Amount] of [Ingredient1] <a href="#">Edit</a>/<a href="#">Delete</a>
+                    </li>
+                    <li>
+                          [Amount] of [Ingredient2] <a href="#">Edit</a>/<a href="#">Delete</a>
+                    </li>
+                </ul>
+                <label for="amount">Amt</label>
+                <select name="amount">
+                    <option>- Select a Unit -</option>
+                    <option>Basic Units (1x, 2x...)</option>
+                    <option>Pinch (1 pinch of, 2 pinches of...)</option>
+                    <option>Splash (A splash of, 2 splashes of...)</option>
+                    <option>Sprinkle (A sprinkle of, 2 sprinkles of...)</option>
+                    <option>Drop (A drop of, 2 drops of...)</option>
+                    <option>Part (1 part of, 2 parts of...)</option>
+      
+                    <optgroup label="US Measurements">
+                      <option value="oz">oz</option>
+                      <option value="lb">lb</option>
+                      <option value="tsp">tsp</option>
+                      <option value="tbsp">tbsp</option>
+                      <option value="floz">fl oz</option>
+                      <option value="cup">cup</option>
+                      <option value="pt">pt</option>
+                      <option value="qrt">qrt</option>
+                      <option value="gal">gal</option>
+                    </option>
+                    <optgroup label="Metric Measurements">
+                      <option value="mg">mg</option>
+                      <option value="g">g</option>
+                      <option value="kg">kg</option>
+                      <option value="ml">ml</option>
+                      <option value="l">l</option>
+                      <option value="dl">dl</option>
+                    </optgroup>
+                </select>
+                <label for="ingredient">Ingredient</label>
+                <input type="text"/>
+                <a href="#">Add Ingredient</a>
+              </section>
+              <section class="instructions">
+                  <h2>Instructions</h2>
+                  <textarea placeholder="Instructions go here."></textarea>
+              </section>
+            </form>
+          </main>
+  </body>
+</html>
